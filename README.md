@@ -1,4 +1,4 @@
-
+<img width="1485" height="815" alt="image" src="https://github.com/user-attachments/assets/600a376c-252a-48c8-bb15-02717918ae40" />
 # รายงานโครงการสุดท้าย (Final Project Report)
 ## วิชา 204466 การเรียนรู้เชิงลึก (Deep Learning)
 
@@ -19,6 +19,27 @@
 ---
 
 ## 1. บทนำและความน่าสนใจของโปรเจค
+<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+
+  <div style="text-align: center;">
+    <p><strong>Input</strong></p>
+    <img src="https://github.com/user-attachments/assets/ca624ada-96cf-4728-9def-22b6c6b0551e" 
+         alt="Input Image" style="max-width: 400px; border: 1px solid #ccc; border-radius: 8px;">
+  </div>
+
+  <div style="text-align: center;">
+    <p><strong>Output</strong></p>
+    <img src="https://cdn.discordapp.com/attachments/1113666073221406770/1435297322018799870/image.png?ex=690b744c&is=690a22cc&hm=70ea674b973aeba0f228ffab2a6abf28d4e016c6f2c963f2fddfa690badb7278" 
+         alt="Output Image" style="max-width: 400px; border: 1px solid #ccc; border-radius: 8px;">
+  </div>
+
+  <div style="text-align: center;">
+    <p><strong>Ground Truth</strong></p>
+    <img src="https://media.discordapp.net/attachments/1113666073221406770/1435297728493125775/image.png?ex=690b74ad&is=690a232d&hm=ebe35f4362e30c7b486d021d19f056bb7e05cce241c395c1544164f767828cff&format=webp&quality=lossless&width=1538&height=859" 
+         alt="Ground Truth Image" style="max-width: 400px; border: 1px solid #ccc; border-radius: 8px;">
+  </div>
+
+</div>
 
 
 ### 1.1 ที่มาและความสำคัญ
