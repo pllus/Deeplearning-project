@@ -68,7 +68,7 @@
 
 1. **ต้องการข้อมูลจำนวนมาก**: ต้องใช้ dataset ขนาดใหญ่ (~3,000 training images จาก Cityscape Dataset) เพื่อให้โมเดลเรียนรู้ได้ดี
 
-2. **เวลาในการ Training**: ต้องใช้เวลานาน (100 epochs) และต้องการ GPU ที่มีประสิทธิภาพ โดยเฉพาะกับภาพขนาด 1024×2048
+2. **เวลาในการ Training**: ต้องใช้เวลานาน (60 epochs) และต้องการ GPU ที่มีประสิทธิภาพ โดยเฉพาะกับภาพขนาด 1024×2048
 
 3. **ความไม่แน่นอนของผลลัพธ์**: บางครั้งโมเดลอาจสร้างภาพที่มี artifacts หรือรายละเอียดที่ไม่ถูกต้อง เช่น โครงสร้างอาคารที่บิดเบี้ยวหรือรถยนต์ที่มีรูปทรงผิดเพี้ยน
 
@@ -867,7 +867,8 @@ graph TB
 | Learning Rate | 2e-4 | Standard สำหรับ GANs (Adam optimizer) |
 | Optimizer | Adam | β₁=0.5, β₂=0.999 |
 | L1 Lambda | 100 | Weight สำหรับ L1 loss ใน Generator |
-| Epochs | 100 | Train จนกว่า loss จะ converge |
+| Epochs | 60
+| Train จนกว่า loss จะ converge |
 | Image Size | 1024×2048 | ความละเอียดเต็มของ Cityscape Dataset |
 | Num Workers | 2 | สำหรับ DataLoader parallel loading |
 
@@ -1070,7 +1071,7 @@ D(fake) ≈ 0.1-0.3  (ควรใกล้ 0)
 
 1. ✅ **สร้างโมเดล Pix2Pix GAN** ที่สามารถแปลง Semantic Segmentation Maps เป็นภาพทิวทัศน์เมืองที่สมจริง
 2. ✅ **ใช้ Cityscape Dataset** ~3,000 training images พร้อม high-resolution segmentation labels
-3. ✅ **Train โมเดล** บน Google Colab เป็นเวลา 100 epochs ด้วยภาพขนาด 1024×2048
+3. ✅ **Train โมเดล** บน Google Colab เป็นเวลา 60 epochs ด้วยภาพขนาด 1024×2048
 4. ✅ **ทำเอกสารประกอบ** อย่างครบถ้วน พร้อม architecture diagrams
 
 **ข้อดีของโปรเจค:**
@@ -1091,5 +1092,4 @@ D(fake) ≈ 0.1-0.3  (ควรใกล้ 0)
    - เพิ่ม resolution เป็น 512×512 หรือ 1024×1024
    - ใช้ Progressive Growing approach
    - เพิ่ม Perceptual Loss แทน... (8 KB left)
-final_report.md
-58 KB
+
